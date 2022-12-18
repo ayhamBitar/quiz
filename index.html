@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="settings">
+      <div class="container">
+        <h2>Quiz Settings</h2>
+        <div class="select">
+          <label for="category">Select Category: </label>
+          <select name="category" id="category">
+            <option value="11">Film</option>
+            <option value="27">Animals</option>
+            <option value="9">General Knowledge</option>
+            <option value="12">Music</option>
+            <option value="26">Celebrities</option>
+          </select>
+        </div>
+        <div class="diff">
+          <label class="diff-title">Difficulty: </label>
+          <input type="radio" name="diff" id="easy" checked="checked" />
+          <label for="easy">Easy</label>
+          <input type="radio" name="diff" id="medium" />
+          <label for="medium">Medium</label>
+          <input type="radio" name="diff" id="hard" />
+          <label for="hard">Hard</label>
+        </div>
+        <div class="amount">
+          <span>Number of Questions</span>
+          <input type="number" id="amount" value="5" />
+        </div>
+        <button id="submit-btn">Start Quiz</button>
+      </div>
+    </div>
+    <div class="quiz">
+      <div class="container">
+        <h2>Quiz</h2>
+        <p id="number-from"></p>
+
+        <h4 id="quiz-question"></h4>
+        <p>please select your answer:</p>
+        <div class="choices"></div>
+        <button id="submit">Submit</button>
+        <div class="correct"></div>
+      </div>
+    </div>
+    <div class="final">
+      <div class="container">
+        <h2>The Quiz completed</h2>
+        <p class="scores"></p>
+        <p>Do you want to take new Quiz??</p>
+        <button id="restart">Restart</button>
+      </div>
+    </div>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

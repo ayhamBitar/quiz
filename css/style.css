@@ -1,0 +1,91 @@
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.container {
+  width: 50%;
+  margin: 20px auto;
+  border: 1px solid #cdbba8;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+  background-color: #f7ede2;
+}
+h2 {
+  text-align: center;
+}
+.settings {
+}
+.settings .select,
+.diff {
+  margin: 20px auto;
+}
+.settings .select label,
+.diff label:first-of-type,
+.settings .amount span {
+  margin-right: 30px;
+}
+.settings input[type="number"] {
+  width: 50px;
+}
+button {
+  margin: 20px 0;
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #84a59d;
+  color: #f7ede2;
+  font-weight: 700;
+  font-size: 15px;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #6faa9b;
+}
+
+/* =========== quiz section =============== */
+
+.quiz {
+  margin: auto;
+  display: none;
+}
+.quiz #number-from {
+  width: 100px;
+  text-align: center;
+  display: block;
+  margin: -10px auto;
+  color: #f28482;
+  font-size: 15px;
+}
+.quiz .choices .choice {
+  margin: 10px 0;
+}
+.quiz .correct {
+  background-color: #84a59d;
+  color: white;
+  width: fit-content;
+  padding: 20px 25px;
+  font-weight: 600px;
+  font-size: 20px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 0;
+  transition: 1s;
+  opacity: 0;
+}
+
+/* =========== final section =============== */
+.final {
+  display: none;
+}
+.final .scores {
+  width: 100px;
+  margin: auto;
+  text-align: center;
+  font-weight: 600;
+  color: #f28482;
+}
